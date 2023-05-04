@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*-------------------- Navbar  -------------------*/
+ #nav-menu {
+  position: fixed;
+  top: 0;
+  background-color: #4831D4;
+  padding: 10px;
+  width: 100%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#nav-menu ul {
+  list-style-type: none;
+  /* remove bullet points from list */
+  margin: 0;
+  /* remove default margin from list */
+  padding: 0;
+  /* remove default padding from list */
+  display: flex;
+  /* use flexbox for layout */
+  justify-content: right;
+  /* center the list horizontally */
+}
+
+#nav-menu li {
+  margin: 0 10px;
+  /* add margin between list items */
+}
+
+.nav-link {
+  display: block;
+  /* display links as block-level elements */
+  color: #fff;
+  /* set text color for links */
+  text-decoration: none;
+  /* remove underline from links */
+  font-size: 18px;
+  /* set font size for links */
+  font-weight: bold;
+  /* set font weight for links */
+  padding: 10px;
+  /* add some padding around links */
+  transition: background-color 0.5s ease-in-out;
+  /* add transition effect */
+}
+
+.nav-link:hover {
+  border-radius: 5px;
+  background-color: #5f4fcc;
+  /* change background color on hover */
+}
+
+.hamburger{
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* styles for smaller screens */
+@media screen and (max-width: 600px) {
+  #nav-menu {
+    position: static; /* make the nav bar static */
+    background-color: black;
+  }
+  
+  #nav-menu ul {
+    flex-direction: column; /* change the direction of the flex container */
+    align-items: center; /* center the flex container vertically */
+    padding: 20px 0; /* add some padding to the flex container */
+    display: none; /* hide the list by default */
+  }
+  
+  #nav-menu li {
+    margin: 10px 0; /* add some margin between list items */
+  }
+  
+  .nav-link {
+    font-size: 16px; /* reduce font size for smaller screens */
+    padding: 5px; /* reduce padding for smaller screens */
+  }
+  
+  /* styles for the hamburger icon */
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 22.5px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger span:nth-child(2), .hamburger span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hamburger span:nth-child(4) {
+    bottom: 0;
+  }
+  
+  /* class to show/hide the list */
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+
+
+/*-------------------- Home Section  -------------------*/
+
+.home-img {
+  width: 100%;
+  margin-top: 60px;
+}
