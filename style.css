@@ -280,8 +280,45 @@ body {
   left: 10%; /* align the text to the left */
   color: black; /* set the text color to white */
   max-width: 60%; /* set the maximum width to avoid the text overflowing */
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-top: -50px;
   margin-left: 20px;
 }
 
+
+
+/* ----------------------Skills Section----------------------*/
+
+/* Style for the Skills section */
+#skills {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+
+#skills h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.skills-card-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
