@@ -12,6 +12,7 @@ body {
   padding: 10px;
   width: 100%;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  z-index: 2;
 }
 
 #nav-menu ul {
@@ -248,4 +249,39 @@ body {
 
 
 
+
+/* ----------------------About Section ----------------------*/
+
+.about {
+  position: relative; /* set the container to relative to position the text */
+}
+
+.about-bg-img {
+  display: block;
+  width: 100%;
+}
+
+.about h2 {
+  position: absolute;
+  top: 26%; /* center the text vertically */
+  left: 10%; /* move the text to the left */
+  transform: translateY(-50%); /* adjust the position after centering */
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: #4831D4;
+  margin-left: 20px;
+}
+
+.about p {
+  position: absolute;
+  top: 45%; /* move the text down below the h2 */
+  left: 10%; /* align the text to the left */
+  color: black; /* set the text color to white */
+  max-width: 60%; /* set the maximum width to avoid the text overflowing */
+  font-size: 2rem;
+  margin-top: -50px;
+  margin-left: 20px;
+}
 
