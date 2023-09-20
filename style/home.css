@@ -122,6 +122,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    margin-top: 30px;
   }
 
   #resume-button-2 {
@@ -190,6 +192,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    margin-top: 30px;
   }
 
   #resume-button-2 {
@@ -246,6 +250,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    margin-top: 30px;
   }
 
   #resume-button-2 {
